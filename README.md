@@ -1,7 +1,7 @@
 1. Create a new React App
     - Open terminal and enter the command line:
-        npx create-react-app name project
-        cd name project
+        npx create-react-app name-project
+        cd name-project
         npm start -> Run Project
     - Create folder Component have 3 Component:
         Todo.js
