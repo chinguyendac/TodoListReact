@@ -39,6 +39,26 @@
   
   .todo-form {
     margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* .MuiInputLabel-animated {
+    color: white !important;
+  }
+
+  .MuiInputLabel-formControl {
+    top: 3px !important;
+    left: 3px !important;
+  }
+
+  .makeStyles-textField-2 {
+    width: auto !important;
+    border: 2px solid #5d0cff !important;
+  } */
+
+  .MuiInputBase-root {
+    color: white !important;
   }
   
   .todo-input {
@@ -46,7 +66,7 @@
     border-radius: 4px 0 0 4px;
     border: 2px solid #5d0cff;
     outline: none;
-    width: 320px;
+    /* width: 320px; */
     background: transparent;
     color: #fff;
   }
