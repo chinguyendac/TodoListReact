@@ -4,6 +4,7 @@ import TodoForm from './TodoForm';
 
 function TodoList() {
     const [todos, setTodos] =  useState([]);
+    const [isSort, setIsSort] = useState(false);
 
     //Add New Todo
     const addTodo = todo => {
@@ -30,6 +31,12 @@ function TodoList() {
         setTodos(newArr);
     }
 
+    //Change Sort 
+    const handleChangeSort = () => {
+        let newIsSort = !isSort;
+        setIsSort(newIsSort);
+    }
+
     const completeTodo = id => {
         let updatedTodos = todos.map(todo => {
             if(todo.id === id) {
@@ -44,7 +51,9 @@ function TodoList() {
         <div>
             <h1>Todo List</h1>
             <TodoForm onSubmit={addTodo}/>
-            <Todo todos={todos} 
+            <button className="todo-button todo-button--square" onClick={handleChangeSort}>Sort Time</button>
+            <Todo todos={todos}
+                isSort={isSort} 
                 completeTodo={completeTodo} 
                 removeTodo={removeTodo} 
                 updateTodo={updateTodo}

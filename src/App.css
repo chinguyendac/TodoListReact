@@ -89,6 +89,10 @@
     color: #fff;
     text-transform: capitalize;
   }
+
+  .todo-button--square {
+    border-radius: 4px;
+  }
   
   .todo-input.edit {
     border: 2px solid #149fff;
